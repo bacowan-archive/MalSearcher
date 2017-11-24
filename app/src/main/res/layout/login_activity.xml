@@ -8,15 +8,6 @@
         <variable name="vm" type="cowan.brendan.malsearcher.ViewModel.LoginViewModel"/>
     </data>
 
-    <!-- Login progress -->
-    <!--<ProgressBar
-        android:id="@+id/login_progress"
-        style="?android:attr/progressBarStyleLarge"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:visibility="gone" />-->
-
     <ScrollView
         android:id="@+id/login_form"
         android:layout_width="match_parent"
@@ -29,7 +20,7 @@
             android:orientation="vertical">
 
             <EditText
-                android:text="@{vm.Username}"
+                android:text="@{vm.username}"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/prompt_username"
@@ -38,7 +29,7 @@
                 android:singleLine="true" />
 
             <EditText
-                android:text="@{vm.Password}"
+                android:text="@{vm.password}"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/prompt_password"
@@ -50,7 +41,7 @@
                 android:singleLine="true" />
 
             <Button
-                android:onClick="@{() -> vm.LoginClick()}"
+                android:onClick="@{() -> vm.loginClick()}"
                 style="?android:textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
